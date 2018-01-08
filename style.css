@@ -13,6 +13,7 @@ html, body {
   text-align: justify;
   text-justify: inter-word;
   color: #333;
+  float:center;
   }
 
 #header1{
@@ -33,25 +34,13 @@ a:hover {
 
 .context {
     margin-top: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     font-size: 16px;
 }
 
-.rectangle {
-  fill: steelblue;
-}
-
-.rectangle:hover {
-  fill: orange;
-}
-
-.bar_label {
-  fill: black;
-  font-family: sans-serif
-}
 
 .axis {
-    font: 10px sans-serif;
+    font: 10px Helvetica, sans-serif;
 }
 
 .axis path,
@@ -64,7 +53,6 @@ a:hover {
 /* On mouse hover, lighten state color */
 path:hover {
 	fill-opacity: .8;
-    fill: white; /* TODO : doesn't work */
 }
 
 path {
@@ -101,3 +89,11 @@ path {
     font-family: Helvetica, sans-serif;
     display: inline-block
 }
+
+.mt-overflow-auto {
+
+    overflow: auto;
+
+}
+
+li { list-style-position: inside }

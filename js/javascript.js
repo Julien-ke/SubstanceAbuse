@@ -202,19 +202,6 @@ function click_state(d) {
         selection = document.getElementById("dropdown").value;
         y.domain([0, d3.max(data, function(d){return +d[selection];})]);
         yAxis.scale(y);
-        /*
-        svg = d3.select("#map1 .panel-body #linechart")
-                .append('g')
-                .attr("transform", 
-                      "translate(" + margin.left + "," + margin.top + ")");
-        
-        svg.append("path")
-           .attr("class", "line")
-           .attr("d", valueline(data));
-        
-              // Force D3 to recalculate and update the line
-      svg.selectAll('.line')
-        .attr("d", function(d) { return line(data); });*/
     
         d3.select(".line")
           .transition()
