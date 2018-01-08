@@ -1,0 +1,103 @@
+html, body {
+  margin: 0;
+  height: 100%
+}
+
+.full_page {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: Helvetica, sans-serif !important;
+  text-align: justify;
+  text-justify: inter-word;
+  color: #333;
+  }
+
+#header1{
+    margin-top: 12px;
+    margin-bottom: 48px;
+    font-size: 54px
+}
+#header2{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 26px
+}
+
+a {
+  color: #1EAEDB; }
+a:hover {
+  color: #0FA0CE; }
+
+.context {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.rectangle {
+  fill: steelblue;
+}
+
+.rectangle:hover {
+  fill: orange;
+}
+
+.bar_label {
+  fill: black;
+  font-family: sans-serif
+}
+
+.axis {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+/* On mouse hover, lighten state color */
+path:hover {
+	fill-opacity: .8;
+    fill: white; /* TODO : doesn't work */
+}
+
+path {
+    stroke: black;
+    stroke-width: 2;
+    fill: none;
+}
+
+.row {
+    display: block
+}
+
+#text_drop {
+    font-family: Helvetica, sans-serif;
+    display: inline-block
+}
+#drop {
+    display: inline-block
+}
+
+.panel-title {
+    font-family: Helvetica, sans-serif   
+}
+
+.col-lg-10 {
+    display: block
+}
+
+#content {
+    display: inline-block
+}
+
+#toolbox {
+    font-family: Helvetica, sans-serif;
+    display: inline-block
+}

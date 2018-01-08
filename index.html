@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Drug abuse</title>
+        <link rel='stylesheet' type='text/css' href='style.css'>
+        <script type='text/javascript' src='js/d3.v5.js' charset='utf-8'></script>  
+        <script type='text/javascript'></script>
+    </head>
+    <body>
+        <div class="full_page">
+            <div class="header" id ="header1" >
+                <center>Substance abuse in USA</center> 
+            </div>
+            <div class="header" id="header2">
+                Data visualization project
+            </div>
+            <div class="context" id="context">
+                In the link below you will find the data set I used. This dataset is obtained by performing a query on the host site. Make sure to perform a GroupBy by "State" and "Year".
+            </div>
+            <div><a href="https://wonder.cdc.gov/ucd-icd10.html" target="_blank">Sources</a></div>
+            <div class="context" id="context">
+                <br>The United States has a major problem of its own: the United States consumes 80 per cent of the world's opiate production, and there are an estimated two to three million dependent American citizens. The total estimated cost to American society, including health care costs and loss of competitiveness, would be almost $80 billion.<br>
+                Overdose deaths jumped by the widest gap in U. S. history in 2016, according to preliminary data compiled by the New York Times. The Times estimates that in 2016, more than 59,000 people died from drug overdose, an increase of 19% over 2015.<br><br>
+                <h3>Exemple in New Jersey</h3>
+                The following graph shows the evolution of drug-related deaths in New Jersey. We can see that there are peaks in some years. After some research we can find that some events have a direct link with the cause of these peaks. Here are some of them:
+                <UL>
+                    <LI>1995 - OxyContin, a long acting version of oxycodone, is introduced and aggressively marketed as a safer pain pill by manufacturer, Purdue Pharma.
+                    <LI>2007 - The federal government brings criminal charges against Purdue Pharma for misleadingly advertising OxyContin as safer and less addictive than other opioids.
+                    <LI>2009-2017 - Obama's Mendat
+                    <LI>2010 - FDA approves an "abuse-deterrant" formulation of OxyContin, to help curb abuse. However, people still find ways to abuse it.
+                    <LI>mid-2010 - Opioid Epidemic
+                    
+                </UL>
+            </div>
+            <svg width="1000" height="400" id="linechart_"><g transform="translate(80,80)"><path class="line_" d="M0,119.36254980079681L53,113.30677290836654L105,113.14741035856574L158,98.96414342629481L210,113.78486055776892L263,126.69322709163346L315,86.05577689243029L368,79.20318725099602L420,112.98804780876495L473,111.23505976095618L525,185.33864541832668L578,96.09561752988047L630,73.94422310756971L683,37.928286852589636L735,27.888446215139446L788,32.35059760956175L840,0"></path><g class="x_axis_" transform="translate(0,240)"><g class="tick" transform="translate(53,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;">2000</text></g><g class="tick" transform="translate(158,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;">2002</text></g><g class="tick" transform="translate(263,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;">2004</text></g><g class="tick" transform="translate(368,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;">2006</text></g><g class="tick" transform="translate(473,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;">2008</text></g><g class="tick" transform="translate(578,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;">2010</text></g><g class="tick" transform="translate(683,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;">2012</text></g><g class="tick" transform="translate(788,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;">2014</text></g><path class="domain" d="M0,6V0H840V6"></path><text class="x_legend" text-anchor="middle" transform="translate(420,70)">Date</text></g><g class="y_axis_"><g class="tick" transform="translate(0,240)" style="opacity: 1;"><line x2="-6" y2="0"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end;">0</text></g><g class="tick" transform="translate(0,160.3187255859375)" style="opacity: 1;"><line x2="-6" y2="0"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end;">500</text></g><g class="tick" transform="translate(0,80.637451171875)" style="opacity: 1;"><line x2="-6" y2="0"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end;">1,000</text></g><g class="tick" transform="translate(0,0.9561753273010254)" style="opacity: 1;"><line x2="-6" y2="0"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end;">1,500</text></g><path class="domain" d="M-6,0H0V240H-6"></path><text class="y_legend" text-anchor="middle" transform="translate(-25,-10)">drug deaths</text></g></g></svg>
+            <div class="readme">
+                <h3>Now your turn !</h3><br>The map below is interactive, you can view demographic data by clicking on a report. The data displayed is temporal and depends on the type of data you want to display. Try to look for peaks and find an explanation.<br><br>
+            </div>
+            <div class="row" id="row_drop"> 
+                <div class="text" id ="text_drop">Choose which kind of data you want to display : </div>
+                <div id ="drop" align=left></div>
+            </div>
+            <div class="container" style="margin-top:10px;">
+                <div class="row">
+                    <div id="myTabContent" class="tab-content">
+                        <div id="map1" class="tab-pane fade in active" style="position:relative;">
+                            <div class="col-lg-10">
+                                <div id="content"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"></h3>
+                                    </div>
+                                    <div class="panel-body"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type='text/javascript' src='js/javascript.js'></script>
+        </div>
+    </body>
+</html>
