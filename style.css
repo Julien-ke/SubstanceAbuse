@@ -96,4 +96,16 @@ path {
 
 }
 
+  .overlay {
+    fill: none;
+    pointer-events: all;
+  }
+  .focus {
+    font-size: 14px;
+  }
+
+  .focus circle {
+    fill: #5e8dc9;
+  }
+
 li { list-style-position: inside }
